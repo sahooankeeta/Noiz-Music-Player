@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--P L E A S E   E X E C U T E    ON    W E B S E R V E R   OTHERWISE ICONS WONT BE VISIBLE-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <title>NOIZ</title>
+  </head>
+  <body>
+    <!--HEADER NAVIGATION BAR-->
+    <header>
+      <img src="img/logo.png" alt="logo" class="logo" />
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">radio</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">podcasts</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">trending</a>
+        </li>
+      </ul>
+      <form action="#" class="search">
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Search songs,artists...."
+        />
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-bell"></use>
+          </svg>
+
+          <span class="user-nav__notification">7</span>
+        </div>
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-heart"></use>
+          </svg>
+        </div>
+        <div class="user-nav__user">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-finder"></use>
+          </svg>
+          <span class="user-nav__user-name">Ankeeta</span>
+        </div>
+      </nav>
+    </header>
+    <!--END OF HEADER-->
+    <main>
+      <input
+        type="checkbox"
+        id="checkbox_queue"
+      /><!--TO VIEW QUEUE SECTION IN SMALLER SCREENS-->
+
+      <div class="overview">
+        <!--TOP PICKS SECTION-->
+        <div class="top-picks">
+          <img src="img/hindi-top-50.jpg" alt="" class="top-picks__item" />
+          <img
+            src="img/top50-international.jpg"
+            alt=""
+            class="top-picks__item"
+          />
+          <img src="img/summer-vibes.jpg" alt="" class="top-picks__item" />
+          <img src="img/rap.PNG" alt="" class="top-picks__item" />
+        </div>
+        <!--TOP PICK ENDS-->
+
+        <!--LATEST RELEASE SECTION-->
+        <div class="latest-releases">
+          <div class="heading">latest releases</div>
+          <div class="latest-releases__content">
+            <div class="latest__item">
+              <a href="#progress__bar" class="play">
+                <svg class="latest__icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+              </a>
+              <img src="img/list-1.jpg" alt="" class="latest__img" />
+              <div class="latest__text">
+                <span class="latest__song">i like it</span>
+                <span class="latest__artist">cardi b</span>
+              </div>
+              <span class="latest__time">3:45</span>
+              <svg class="latest__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
+              <ul class="list latest__list">
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                  </svg>
+                  play now
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                  add to queue
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  add to favourites
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-info-with-circle"
+                    ></use>
+                  </svg>
+                  more info
+                </li>
+              </ul>
+            </div>
+            <div class="latest__item">
+              <a href="#progress__bar" class="play">
+                <svg class="latest__icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+              </a>
+              <img src="img/list-2.jpg" alt="" class="latest__img" />
+              <div class="latest__text">
+                <span class="latest__song">often</span>
+                <span class="latest__artist">the weeknd</span>
+              </div>
+              <span class="latest__time">3:45</span>
+              <svg class="latest__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
+              <ul class="list latest__list">
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                  </svg>
+                  play now
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                  add to queue
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  add to favourites
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-info-with-circle"
+                    ></use>
+                  </svg>
+                  more info
+                </li>
+              </ul>
+            </div>
+            <div class="latest__item">
+              <a href="#progress__bar" class="play">
+                <svg class="latest__icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+              </a>
+              <img src="img/list-3.jpg" alt="" class="latest__img" />
+              <div class="latest__text">
+                <span class="latest__song">cola</span>
+                <span class="latest__artist">lana del rey</span>
+              </div>
+              <span class="latest__time">3:45</span>
+              <svg class="latest__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
+              <ul class="list latest__list">
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                  </svg>
+                  play now
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                  add to queue
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  add to favourites
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-info-with-circle"
+                    ></use>
+                  </svg>
+                  more info
+                </li>
+              </ul>
+            </div>
+            <div class="latest__item">
+              <a href="#progress__bar" class="play">
+                <svg class="latest__icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+              </a>
+              <img src="img/list-3.jpg" alt="" class="latest__img" />
+              <div class="latest__text">
+                <span class="latest__song">de una vez</span>
+                <span class="latest__artist">selena gomez</span>
+              </div>
+              <span class="latest__time">3:45</span>
+              <svg class="latest__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
+              <ul class="list latest__list">
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                  </svg>
+                  play now
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                  add to queue
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  add to favourites
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-info-with-circle"
+                    ></use>
+                  </svg>
+                  more info
+                </li>
+              </ul>
+            </div>
+            <div class="latest__item">
+              <a href="#progress__bar" class="play">
+                <svg class="latest__icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+              </a>
+              <img src="img/list-2.jpg" alt="" class="latest__img" />
+              <div class="latest__text">
+                <span class="latest__song">de una vez</span>
+                <span class="latest__artist">selena gomez</span>
+              </div>
+              <span class="latest__time">3:45</span>
+              <svg class="latest__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
+              <ul class="list latest__list">
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                  </svg>
+                  play now
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                  add to queue
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  add to favourites
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-info-with-circle"
+                    ></use>
+                  </svg>
+                  more info
+                </li>
+              </ul>
+            </div>
+            <div class="latest__item">
+              <a href="#progress__bar" class="play">
+                <svg class="latest__icon">
+                  <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                </svg>
+              </a>
+              <img src="img/list-1.jpg" alt="" class="latest__img" />
+              <div class="latest__text">
+                <span class="latest__song">sober</span>
+                <span class="latest__artist">g eazy</span>
+              </div>
+              <span class="latest__time">3:45</span>
+              <svg class="latest__icon">
+                <use
+                  xlink:href="img/sprite.svg#icon-dots-three-horizontal"
+                ></use>
+              </svg>
+              <ul class="list latest__list">
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-controller-play"></use>
+                  </svg>
+                  play now
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-plus"></use>
+                  </svg>
+                  add to queue
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                  add to favourites
+                </li>
+                <li class="list-item">
+                  <svg class="list-icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-info-with-circle"
+                    ></use>
+                  </svg>
+                  more info
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--LATEST RELEASE SECTION ENDS-->
+        <!--POPULAR ARTIST SECTION-->
+        <div class="popular-artists">
+          <div class="heading">popular artist</div>
+          <div class="popular-artists__content">
+            <a href="popular-artist-ariana-grande/index.html">
+              <!--CLICK HERE TO VIEW SINGLE PLAYLIST SCREEN-->
+              <figure class="artist">
+                <img src="img/ariana.jpg" alt="" class="artist__img" />
+                <figcaption class="artist__name">ariana grande</figcaption>
+              </figure>
+            </a>
+            <a href="#ed-sheeran">
+              <figure class="artist">
+                <img src="img/edsheeran.jpg" alt="" class="artist__img" />
+                <figcaption class="artist__name">ed sheeran</figcaption>
+              </figure>
+            </a>
+            <a href="#drake">
+              <figure class="artist">
+                <img src="img/drake.jpg" alt="" class="artist__img" />
+                <figcaption class="artist__name">drake</figcaption>
+              </figure>
+            </a>
+
+            <a href="#selena-gomez">
+              <figure class="artist">
+                <img src="img/selena.png" alt="" class="artist__img" />
+                <figcaption class="artist__name">selena gomez</figcaption>
+              </figure>
+            </a>
+
+            <a href="#camila-cabello">
+              <figure class="artist">
+                <img src="img/camila-cabello.jpg" alt="" class="artist__img" />
+                <figcaption class="artist__name">camila cabello</figcaption>
+              </figure>
+            </a>
+
+            <a href="#halsey">
+              <figure class="artist">
+                <img src="img/halsey.jpg" alt="" class="artist__img" />
+                <figcaption class="artist__name">halsey</figcaption>
+              </figure>
+            </a>
+            <a href="#shawn-mendes">
+              <figure class="artist">
+                <img src="img/shawn-mendes.jpg" alt="" class="artist__img" />
+                <figcaption class="artist__name">shawn mendes</figcaption>
+              </figure>
+            </a>
+
+            <a href="#maluma">
+              <figure class="artist">
+                <img src="img/maluma.jpg" alt="" class="artist__img" />
+                <figcaption class="artist__name">maluma</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <!--POPULAR ARTIST SECTION ENDS-->
+        <!--STATIONS SECTION-->
+        <section class="station">
+          <div class="heading">moods and collections</div>
+          <div class="station__content">
+            <a href="#workout">
+              <figure class="station__item">
+                <div class="station__img station__img-1"></div>
+                <figcaption class="station__name">relax</figcaption>
+              </figure>
+            </a>
+
+            <a href="#relax">
+              <figure class="station__item">
+                <div class="station__img station__img-2"></div>
+                <figcaption class="station__name">retro</figcaption>
+              </figure>
+            </a>
+
+            <a href="#retro">
+              <figure class="station__item">
+                <div class="station__img station__img-3"></div>
+                <figcaption class="station__name">workout</figcaption>
+              </figure>
+            </a>
+
+            <a href="#rock">
+              <figure class="station__item">
+                <div class="station__img station__img-4"></div>
+                <figcaption class="station__name">love</figcaption>
+              </figure>
+            </a>
+
+            <a href="#love">
+              <figure class="station__item">
+                <div class="station__img station__img-5"></div>
+                <figcaption class="station__name">rock</figcaption>
+              </figure>
+            </a>
+          </div>
+        </section>
+        <!--STATIONS SECTION ENDS-->
+        <!--CATEGORY SECTION-->
+        <section class="category">
+          <div class="category__item">
+            <a href="#electronic">
+              <div class="category__img category__img-1"></div>
+              <span class="category__name">electronic</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="#party">
+              <div class="category__img category__img-2"></div>
+              <span class="category__name">party</span>
+            </a>
+          </div>
+
+          <div class="category__item">
+            <a href="#road__trip">
+              <div class="category__img category__img-3"></div>
+              <span class="category__name">road trip</span>
+            </a>
+          </div>
+        </section>
+        <!--CATEGORY SECTION ENDS-->
+      </div>
+      <label for="checkbox_queue">
+        <!--CLICK TO VIEW QUEUE SECTION-->
+        <svg class="queue-display__icon">
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
+      </label>
+      <!--QUEUE SONGS-->
+      <div class="queue">
+        <h2>
+          <span class="heading">queue</span>
+          <span class="queue__list-icon">
+            <svg class="queue__list">
+              <use xlink:href="img/sprite.svg#icon-list"></use>
+            </svg>
+          </span>
+        </h2>
+        <ul>
+          <li class="queue__item">
+            <div class="queue__no">01</div>
+            <img
+              src="img/Selena_Gomez_–_De_Una_Vez_(Official_Single_Cover).png"
+              alt=""
+              class="queue__img"
+            />
+            <div class="queue__text">
+              <span class="queue__song">de una vez</span>
+              <span class="queue__artist">selena gomez</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">02</div>
+            <img src="img/brownmunde.jpg" alt="" class="queue__img" />
+            <div class="queue__text">
+              <span class="queue__song">brown munde</span>
+              <span class="queue__artist">ap dillon</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">03</div>
+            <img
+              src="img/The_Weeknd_-_Blinding_Lights.png"
+              alt=""
+              class="queue__img"
+            />
+            <div class="queue__text">
+              <span class="queue__song">blinding lights</span>
+              <span class="queue__artist">the weeknd</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">04</div>
+            <img
+              src="img/J-Balvin-Energia_music.jpg"
+              alt=""
+              class="queue__img"
+            />
+            <div class="queue__text">
+              <span class="queue__song">mi gente</span>
+              <span class="queue__artist">j balvin</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">05</div>
+            <img src="img/geazy.jpg" alt="" class="queue__img" />
+            <div class="queue__text">
+              <span class="queue__song">sober</span>
+              <span class="queue__artist">g eazy</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">06</div>
+            <img src="img/travis.jpg" alt="" class="queue__img" />
+            <div class="queue__text">
+              <span class="queue__song">highest in the room</span>
+              <span class="queue__artist">travis scott</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">07</div>
+            <img src="img/zayn.jpg" alt="" class="queue__img" />
+            <div class="queue__text">
+              <span class="queue__song">party next door</span>
+              <span class="queue__artist">zayn malik</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">08</div>
+            <img
+              src="img/Ariana_Grande_-_The_Best.png"
+              alt=""
+              class="queue__img"
+            />
+            <div class="queue__text">
+              <span class="queue__song">side to side</span>
+              <span class="queue__artist">ariana grande</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">09</div>
+            <img
+              src="img/Selena_Gomez_–_De_Una_Vez_(Official_Single_Cover).png"
+              alt=""
+              class="queue__img"
+            />
+            <div class="queue__text">
+              <span class="queue__song">de una vez</span>
+              <span class="queue__artist">selena gomez</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+          <li class="queue__item">
+            <div class="queue__no">10</div>
+            <img
+              src="img/The_Weeknd_-_Blinding_Lights.png"
+              alt=""
+              class="queue__img"
+            />
+            <div class="queue__text">
+              <span class="queue__song">blinding lights</span>
+              <span class="queue__artist">the weeknd</span>
+            </div>
+            <div class="queue__icon">
+              <svg class="queue__list">
+                <use xlink:href="img/sprite.svg#icon-heart"></use>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--QUEUE ENDS-->
+    </main>
+    <!--BOTTOM MUSIC PLAYER-->
+    <footer id="progress__bar">
+      <!--SONG DETAILS-->
+      <div class="song__details">
+        <img
+          src="img/Selena_Gomez_–_De_Una_Vez_(Official_Single_Cover).png"
+          alt=""
+          class="progress__img"
+        />
+        <div class="progress__text">
+          <span class="progress__song">de una vez</span>
+          <span class="progress__artist">selena gomez</span>
+        </div>
+      </div>
+      <!--PLAY FUNCTIONS-->
+      <div class="bar">
+        <button class="btn__shuffle">
+          <svg class="bar__icon">
+            <use xlink:href="img/sprite.svg#icon-shuffle"></use>
+          </svg>
+        </button>
+        <button class="btn__previous">
+          <svg class="bar__icon bar__icon-previous">
+            <use xlink:href="img/sprite.svg#icon-previous"></use>
+          </svg>
+        </button>
+
+        <button class="btn__play">
+          <svg class="bar__icon bar__icon-play">
+            <use xlink:href="img/sprite.svg#icon-play2"></use>
+          </svg>
+        </button>
+
+        <button class="btn__next">
+          <svg class="bar__icon bar__icon-next">
+            <use xlink:href="img/sprite.svg#icon-next"></use>
+          </svg>
+        </button>
+
+        <button class="btn__loop">
+          <svg class="bar__icon bar__icon-loop">
+            <use xlink:href="img/sprite.svg#icon-loop2"></use>
+          </svg>
+        </button>
+
+        <div class="slider">
+          <span class="time current-time">0:00</span>
+          <div class="seek-slider">
+            <span class="seek-slider-pointer"></span>
+          </div>
+          <span class="time full-time">3:26</span>
+        </div>
+      </div>
+      <div class="more-actions">
+        <button class="btn__download">
+          <svg class="more__icon more__icon-loop">
+            <use xlink:href="img/sprite.svg#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn__volume">
+          <svg class="more__icon more__volume">
+            <use xlink:href="img/sprite.svg#icon-volume-medium"></use>
+          </svg>
+        </button>
+        <div class="slider__volume">
+          <div class="seek-slider">
+            <span class="seek-slider-pointer"></span>
+          </div>
+          <span class="volume">30</span>
+        </div>
+        <button class="btn__full-screen">
+          <svg class="more__icon more__icon-full-screen">
+            <use xlink:href="img/sprite.svg#icon-resize-full-screen"></use>
+          </svg>
+        </button>
+      </div>
+      <!--TO CLOSE BOTTOM PLAYER-->
+      <div id="progress__bar-close">
+        <a href="#">X</a>
+      </div>
+    </footer>
+    <!--BOTTOM MUSIC PLAYER ENDS-->
+  </body>
+</html>
